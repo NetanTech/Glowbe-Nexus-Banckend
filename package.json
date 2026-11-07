@@ -1,0 +1,47 @@
+{
+  "name": "glowbe-nexus-backend",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "typecheck": "tsc --skipLibCheck --noEmit",
+    "env:test": "ts-node src/scripts/testEnv.ts",
+    "db:check": "ts-node src/scripts/checkDatabase.ts",
+    "db:migrate": "ts-node src/scripts/migrate.ts",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Glowbe Nexus API",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "nodemailer": "^9.0.3",
+    "pg": "^8.23.1",
+    "uuid": "^11.1.0",
+    "validator": "^13.15.15"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.3.0",
+    "@types/nodemailer": "^7.0.9",
+    "@types/pg": "^8.23.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
